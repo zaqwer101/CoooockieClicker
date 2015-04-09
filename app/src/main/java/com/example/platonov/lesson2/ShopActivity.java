@@ -24,7 +24,7 @@ public class ShopActivity extends ActionBarActivity {
 
     public TextView txtView;
 
-    public TextView txt1,txt2,txt3,txt4,txt5;
+    public static TextView txt1,txt2,txt3,txt4,txt5;
 
     //Переменные стоимости построек
     public static long farm_cost = 100,mine_cost = 500,factory_cost = 2000,lab_cost = 10000, spsh_cost = 100000;
@@ -50,6 +50,11 @@ public class ShopActivity extends ActionBarActivity {
         txt4 = (TextView) findViewById(R.id.textView5);
         txt5 = (TextView) findViewById(R.id.textView8);
 
+        txt1.setText(farm_cost+"");
+        txt2.setText(mine_cost+"");
+        txt3.setText(factory_cost+"");
+        txt4.setText(lab_cost+"");
+        txt5.setText(spsh_cost+"");
 
         // Обработчик
         View.OnClickListener oclBtn = new View.OnClickListener()
@@ -114,7 +119,7 @@ public class ShopActivity extends ActionBarActivity {
                         if(MainActivity.score >= spsh_cost)
                         {
                             MainActivity.score_for_click += 600;
-                            MainActivity.score -= lab_cost;
+                            MainActivity.score -= spsh_cost;
                             spsh_cost*=1.3;
                             txt5.setText(spsh_cost+"");
                             txtView.setText(MainActivity.score+"");
