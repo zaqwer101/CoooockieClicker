@@ -135,6 +135,7 @@ public class ShopActivity extends ActionBarActivity {
         btn_factory.setOnClickListener(oclBtn);
         btn_mine.setOnClickListener(oclBtn);
         btn_lab.setOnClickListener(oclBtn);
+        btn_spsh.setOnClickListener(oclBtn);
     }
 
 
