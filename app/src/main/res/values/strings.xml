@@ -13,4 +13,5 @@
     <string name="factory_cost">500</string>
     <string name="mine_cost">2000</string>
     <string name="lab_cost">10000</string>
+    <string name="saceship_cost">100000</string>
 </resources>
